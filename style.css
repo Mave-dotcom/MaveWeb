@@ -3,7 +3,14 @@
 }
 .Header {
     position: relative;
+    border-style: dashed;
+    border-color: white;
+    padding: 2px;
 }
 .Name {
     background-color: purple;
+}
+.links{
+    background-image: url("images/perfect_hue_125.jpg");
+    text-decoration: none;
 }
