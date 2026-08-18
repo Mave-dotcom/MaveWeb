@@ -13,4 +13,13 @@
 .links{
     background-image: url("images/perfect_hue_125.jpg");
     text-decoration: none;
+    color: white;
+}
+.footer{
+    position: absolute;
+    background-color: purple;
+    bottom: 0;
+    left: 0;
+    padding: 2px;
+    margin: 2px;
 }
