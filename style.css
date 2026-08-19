@@ -2,6 +2,9 @@
     background-image: url("images/perfect_hue_125.jpg");
     background-size: cover;
 }
+.Name {
+    animation: colorRotate 6s linear 0s infinite;
+}
 .big{
     margin: auto;
     width: fit-content;
@@ -24,19 +27,56 @@
     color: white;
     display : inline-block;
 }
+.Nightcore {
+    animation: NightcoreColor 6s linear 0s infinite;
+    -webkit-text-stroke: black 2px;
+}
+.personbox {
+    padding: 5px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 5px 5px 10px black;
+    border: 1px white solid;
+    color: white;
+}
 .links{
     text-decoration: none;
     color: white;
 }
-.overflow {
-    position: absolute;
+.footer{
+    position: sticky;
     bottom: 0;
     left: 0;
-    overflow: hidden;
-    max-height: 40px;
-}
-.footer{
-    position: relative;
     padding: 2px;
     margin: 2px;
+    overflow: hidden;
+    max-height: 30px;
+}
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
+@keyframes NightcoreColor {
+  from {
+  color: #7219a2;
+  }
+  50% {
+    color: #1500ff;
+  }
+  100%{
+  color: #7219a2;
+  }
 }
