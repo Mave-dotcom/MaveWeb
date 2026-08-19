@@ -2,34 +2,27 @@
     background-image: url("images/perfect_hue_125.jpg");
     background-size: cover;
 }
-.Header {
-    position: absolute;
-    border-style: dashed;
-    border-color: white;
-    padding: 2px;
-    width: fit-content;
-    margin: auto;
-}
 .big{
     margin: auto;
-    display : flex;
-    flex-direction : row;
+    width: fit-content;
 }
 .small1 {
-    text-align:justify;
     padding: 5px;
-    margin: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-shadow: 5px 5px 10px black;
-    border-style: solid;
+    border: 1px white solid;
     color: white;
+    text-align: center;
+    display : inline-block;
 }
 .small2 {
-    text-align:justify;
     padding: 5px;
-    margin: auto;
-    border-style: solid;
-    color: black;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 5px 5px 10px black;
+    border: 1px white solid;
+    color: white;
+    display : inline-block;
 }
 .links{
     text-decoration: none;
