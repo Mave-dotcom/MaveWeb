@@ -44,6 +44,10 @@
     animation: colorRotateB 2s linear 0s infinite;
     padding: 2px;
 }
+.otherlinks{
+    background-image: url("gifs/lol.gif");
+    color: white;
+}
 .links{
     text-decoration: none;
     color: white;
@@ -94,6 +98,17 @@
   }
   100% {
     border-color: #6666ff;
+  }
+}
+@keyframes colorRotateN {
+  from {
+  border-color: #7219a2;
+  }
+  50% {
+    border-color: #1500ff;
+  }
+  100%{
+  border-color: #7219a2;
   }
 }
 @keyframes NightcoreColor {
