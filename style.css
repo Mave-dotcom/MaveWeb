@@ -57,6 +57,10 @@
     bottom: 0;
     left: 0;
 }
+.grain {
+  background-image: url("images/grain-sand-background-noise-black-and-white-dots-pattern-with-gradient-grainy-backdrop-with.jpeg");
+  color: white;
+}
 .footer{
     position: relative;
     bottom: 0;
