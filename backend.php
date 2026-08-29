@@ -1,27 +1,28 @@
 <?php
-    $servername = "localhost";
-    $username = "dtbsuser";
-    $password = "dtbs#passw01";
-    $dbname = "dtbsname";
-    $conn = new mysqli($servername, $username, $password, $dbname);
+session_start();
+$counter_name = "counter.txt";
 
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    } 
+// Check if a text file exists.
+// If not create one and initialize it to zero.
+if (!file_exists($counter_name)) {
+  $f = fopen($counter_name, "w");
+  fwrite($f,"0");
+  fclose($f);
+}
 
-    $sql = "UPDATE Counter SET visits = visits+1 WHERE id = 1";
-    $conn->query($sql);
+// Read the current value of our counter file
+$f = fopen($counter_name,"r");
+$counterVal = fread($f, filesize($counter_name));
+fclose($f);
 
-    $sql = "SELECT visits FROM Counter WHERE id = 1";
-    $result = $conn->query($sql);
+// Has visitor been counted in this session?
+// If not, increase counter value by one
+if(!isset($_SESSION['hasVisited'])){
+  $_SESSION['hasVisited']="yes";
+  $counterVal++;
+  $f = fopen($counter_name, "w");
+  fwrite($f, $counterVal);
+  fclose($f);
+}
 
-    if ($result->num_rows > 0) {
-        while($row = $result->fetch_assoc()) {
-            $visits = $row["visits"];
-        }
-    } else {
-        echo "no results";
-    }
-    
-    $conn->close();
-?>
+echo "You are visitor number $counterVal to this site";
