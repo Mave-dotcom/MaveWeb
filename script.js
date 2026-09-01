@@ -11,3 +11,7 @@ function DeEnlarge()
 {
     
 }
+function ignore()
+{
+    document.getElementById("ignore").innerHTML = '<img src="images/sobbing-tecazzz.gif" alt="">';
+}
