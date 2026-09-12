@@ -1,0 +1,35 @@
+.Body {
+    background-image: url(gifs/IMG_6879\ \(1\).jpg);
+    background-size: cover;
+}
+.artHeadeer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 5px 5px 10px black;
+    border: 4px rgb(0, 0, 0) solid;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+.artBoxes {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+    border: 4px rgb(0, 0, 0) solid;
+    color: white;
+    text-align: center;
+    display : inline-block;
+    margin: 2px;
+}
+.shadow {
+    text-shadow: 5px 5px 10px black;
+}
+@keyframes NightcoreColor {
+  from {
+  color: #72229c;
+  }
+  50% {
+    color: #382f96;
+  }
+  100%{
+  color: #7219a2;
+  }
+}
