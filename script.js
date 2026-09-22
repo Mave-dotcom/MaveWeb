@@ -15,3 +15,7 @@ function ignore()
 {
     document.getElementById("ignore").innerHTML = '<img src="images/sobbing-tecazzz.gif" alt="">';
 }
+function danceicon()
+{
+    document.body.style.cursor = "url('images/141393.gif'), auto";
+}

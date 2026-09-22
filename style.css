@@ -1,6 +1,7 @@
 .Body {
     background-image: url("images/perfect_hue_125.jpg");
     background-size: cover;
+    cursor: url("images/ayagq-0ekdc.png"), auto;
 }
 .Name {
     animation: colorRotate 6s linear 0s infinite;
