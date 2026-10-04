@@ -11,11 +11,11 @@
 }
 .small1 {
     padding: 5px;
+    text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-shadow: 5px 5px 10px black;
     border: 1px white solid;
     color: white;
-    text-align: center;
     display : inline-block;
 }
 .small2 {
